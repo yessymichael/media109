@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    
+    body{
+      background-color: black;
+      color: yellow;
+      font-size: 50px;
+    }
+    div{
+      display: flex;
+      justify-content: space-around;
+    }
+
+    @media screen and (max-width: 1500px){
+      body{
+        background-color: yellow;
+        color: black;
+      }
+      div{
+        justify-content: space-between;
+      }
+    }
+
+    @media screen and (max-width: 1000px) {
+      body{
+        background-color:green;
+        color: greenyellow;
+      }
+      div{
+
+        flex-direction: column;
+        align-items:  center;
+      }
+      
+    }
+      
+  </style>
+</head>
+<body>
+  <div>
+    <div>Home</div>
+    <div>About Us</div>
+    <div>Contact Us</div>
+  </div>
+  
+</body>
+</html>
